@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.kuge.mapper.MusicServiceMapper">
+    <select id="findmusicpublic" resultType="com.example.kuge.pojo.MusicPublicView">
+        select music.music_name as music_name,user.user_name as user_name,
+        album.album_name as album_name,music.is_vip as vip
+        from music join user on user.user_id=music.user_id
+        join album on music.album_id=album.album_id
+        where music.user_id=#{id}
+    </select>
+    <select id="findMusicByName" resultType="com.example.kuge.pojo.MusicPublicView">
+        select music.music_name as music_name,user.user_name as user_name,
+               album.album_name as album_name,music.is_vip as vip
+        from music join user on user.user_id=music.user_id
+                   join album on music.album_id=album.album_id
+        where music.user_id=#{id} and music.music_name like concat('%',#{musicName},'%')
+    </select>
+    <select id="findMusicBase" resultType="com.example.kuge.pojo.MusicBase">
+        select music.music_id as music_id,
+               music.music_name as music_name,user.user_name as user_name,
+               album.album_name as album_name,music.is_vip as vip,
+               music.favorite_count as favorite_count,music.music_url as music_url
+        from music join user on user.user_id=music.user_id
+                   join album on music.album_id=album.album_id
+        order by music.favorite_count DESC
+        limit 50
+    </select>
+    <select id="selectMusicBase" resultType="com.example.kuge.pojo.MusicBase">
+        select music.music_id as music_id,
+               music.music_name as music_name,user.user_name as user_name,
+               album.album_name as album_name,music.is_vip as vip,
+               music.favorite_count as favorite_count,music.music_url as music_url
+        from music join user on user.user_id=music.user_id
+                   join album on music.album_id=album.album_id
+    </select>
+    <select id="findMusic" resultType="com.example.kuge.pojo.MusicBase">
+        select music.music_id as music_id,
+               music.music_name as music_name,user.user_name as user_name,
+               album.album_name as album_name,music.is_vip as vip,
+               music.favorite_count as favorite_count,music.music_url as music_url
+        from music join user on user.user_id=music.user_id
+                   join album on music.album_id=album.album_id
+        where music.music_name like concat('%',#{music_name},'%')
+    </select>
+    <select id="findMusicByMusicName" resultType="com.example.kuge.pojo.Music">
+        select * from music join user on user.user_id=music.user_id
+                            join album on music.album_id=album.album_id
+        where music.music_name = #{musicName} and user.user_name=#{userName}
+    </select>
+    <insert id="insertfavourite" useGeneratedKeys="true" keyProperty="id">
+        insert into favourite (user_id,music_id,create_time,update_time)
+        values (#{user_id},#{music_id},#{create_time},#{update_time})
+    </insert>
+    <select id="getFavourite" resultType="com.example.kuge.pojo.MusicBase">
+        select music.music_id as music_id,
+               music.music_name as music_name,user.user_name as user_name,
+               album.album_name as album_name,music.is_vip as vip,
+               music.favorite_count as favorite_count,music.music_url as music_url
+        from favourite join music on favourite.music_id=music.music_id
+                       join user on user.user_id=music.user_id
+                       join album on music.album_id=album.album_id
+        where favourite.user_id=#{id} and favourite.state=1
+    </select>
+    <select id="selectMusicBaseById" resultType="com.example.kuge.pojo.MusicBase">
+        select music.music_id as music_id,
+               music.music_name as music_name,user.user_name as user_name,
+               album.album_name as album_name,music.is_vip as vip,
+               music.favorite_count as favorite_count,music.music_url as music_url
+        from music join user on user.user_id=music.user_id
+                   join album on music.album_id=album.album_id
+        where music.music_id=#{music_id}
+    </select>
+</mapper>

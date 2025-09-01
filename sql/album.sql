@@ -1,0 +1,15 @@
+INSERT INTO `album` (`album_id`, `album_name`, `user_id`, `create_time`, `update_time`) VALUES (-2072481791, '江南', 3, '2025-08-12 09:10:09', '2025-08-12 09:10:09');
+INSERT INTO `album` (`album_id`, `album_name`, `user_id`, `create_time`, `update_time`) VALUES (-1967607806, '搁浅', 2, '2025-08-11 18:00:53', '2025-08-11 18:00:53');
+INSERT INTO `album` (`album_id`, `album_name`, `user_id`, `create_time`, `update_time`) VALUES (-1720143871, '七里香', 2, '2025-08-11 18:02:25', '2025-08-11 18:02:25');
+INSERT INTO `album` (`album_id`, `album_name`, `user_id`, `create_time`, `update_time`) VALUES (-1690783742, '明明就', 2, '2025-08-11 18:01:57', '2025-08-11 18:01:57');
+INSERT INTO `album` (`album_id`, `album_name`, `user_id`, `create_time`, `update_time`) VALUES (-1464295423, '愿与愁', 3, '2025-08-12 09:12:02', '2025-08-12 09:12:02');
+INSERT INTO `album` (`album_id`, `album_name`, `user_id`, `create_time`, `update_time`) VALUES (-742871039, '晴天', 2, '2025-08-11 18:02:49', '2025-08-11 18:02:49');
+INSERT INTO `album` (`album_id`, `album_name`, `user_id`, `create_time`, `update_time`) VALUES (-621236223, '兰亭序', 2, '2025-08-11 18:01:37', '2025-08-11 18:01:37');
+INSERT INTO `album` (`album_id`, `album_name`, `user_id`, `create_time`, `update_time`) VALUES (-377966591, '青花瓷', 2, '2025-08-11 18:02:36', '2025-08-11 18:02:36');
+INSERT INTO `album` (`album_id`, `album_name`, `user_id`, `create_time`, `update_time`) VALUES (24674306, 'To Bad', 3, '2025-08-12 09:40:52', '2025-08-12 09:40:52');
+INSERT INTO `album` (`album_id`, `album_name`, `user_id`, `create_time`, `update_time`) VALUES (523808770, '枫', 2, '2025-08-11 18:00:17', '2025-08-11 18:00:17');
+INSERT INTO `album` (`album_id`, `album_name`, `user_id`, `create_time`, `update_time`) VALUES (754495490, '红尘客栈', 2, '2025-08-11 18:01:12', '2025-08-11 18:01:12');
+INSERT INTO `album` (`album_id`, `album_name`, `user_id`, `create_time`, `update_time`) VALUES (813215745, '蒲公英的约定', 2, '2025-08-11 18:02:12', '2025-08-11 18:02:12');
+INSERT INTO `album` (`album_id`, `album_name`, `user_id`, `create_time`, `update_time`) VALUES (1412997122, 'Always Online', 3, '2025-08-12 09:48:41', '2025-08-12 09:48:41');
+INSERT INTO `album` (`album_id`, `album_name`, `user_id`, `create_time`, `update_time`) VALUES (1719160834, '可惜没如果', 3, '2025-08-12 09:32:55', '2025-08-12 09:32:55');
+INSERT INTO `album` (`album_id`, `album_name`, `user_id`, `create_time`, `update_time`) VALUES (1983426561, '稻香', 2, '2025-08-11 17:53:01', '2025-08-11 17:53:01');

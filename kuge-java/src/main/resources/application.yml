@@ -1,0 +1,54 @@
+spring:
+  servlet:
+    multipart:
+      max-file-size: 50MB
+      max-request-size: 100MB
+
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/kuge?characterEncoding=UTF-8&serverTimezone=GMT%2B8
+    username: root
+    password: HKZ151544a
+  mail:
+    host: smtp.qq.com
+    port: 587
+    username: 3192250443@qq.com
+    password: uiqeuxnclyntdecf
+    properties:
+      mail.smtp.starttls.enable: true
+  data:
+    redis:
+      lettuce:
+        pool:
+          max-active: 8
+          max-idle: 8
+          min-idle: 0
+          max-wait: 100ms
+#    user:
+#      name: admin
+#      password: 123456
+mybatis-plus:
+  configuration:
+    map-underscore-to-camel-case: false
+  mapper-locations: classpath:/mapper/**.xml
+
+alipay:
+  easy:
+    protocol: https
+    gatewayHost: openapi-sandbox.dl.alipaydev.com
+    signType: RSA2
+    appId: 9021000150682624
+    merchantPrivateKey: MIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCEP1TFvyTCj4pzKAb0KjdLlOJrm5hInefissI88IU5n40IZxrewp4wgJv+lZ3AmbMa4sGS818nQTuUg+o6zoaU9ijSVJwTJX0gXXQR7hIHsBqR3KX1OLbaabuz0+cLbKjJ6VOGUp9bRtXw8A8HT8B5NJ2Oa8jsOmy2KxRhmBul339uGASdG7QCvLYebDmL1DsXa2cv+BfMSJHO8hTl5jFHREtQXTp0zlG2Ge5fltpIoCF+zbIHhX8D6GCE+50JKBwZra6/RHmR+sh3z7U/ZTGQwysbQY6csx+y/wRRPmthaImvt9OMDUInn4yAsQm09ilSFsdI+KzPmaBJ1KVIkAJRAgMBAAECggEAKP1cMCKLqUZGWmUIqrs/Ak02VLYYYEGZMvnHHI5MLM0YMIeMm4jk8RGbyC/lgmHhUq7/4qVOU+NzLRgqDGog6qDVjEOvUHvpKZPtuvT4X6ukwJsMUVJv0oi9JgLC9RaLxnFscxC+1dLB0vkFH3YHqUm2oAMmdpmxQlFd8tXrk+CZWOtmfwdXlGiU0x4OzCweFzCp/Nnqn88gDXfzBhTuCAMHiEoX/TailA6A/LXFwgekiPz+qX39x9WF3xXtuqnITTq37Z7UllMcvH5rbwbq6LCWug1O1QZ7s/D15fVYS+4bydWz7NoC7KKB7MD39zGeTC7E6zBfmT+anlBGQlZjxQKBgQDthkkRsA7xc/rg+jr+crGopCmvORzKMH1JEYWHhLMvXe77eWderk9rJcrHC2OQYAq0Uv0Jm87xXSjcillBeqZYK849ABVaY4iAn5yKlE4Js70+skNKq/+rl7/8PEHtoz1S5iD6HaX2JJV+ekt/o3ILJpTDUp4+mq/s6l99P18eZwKBgQCOiLYKZkckFLwyOq1YDnLvxRO0I591kBOgMhZ7VQaLIZDnS7RbwKpVGAcAkpy+JXZt2znu5uJh3x3QKu43Tbwd2YtYFVO3tfSEUUxCe184GcZZkTVNmjRITnSbot18M6wBVv+raVz6Y2HJxxgi/QRBr+LxLBADiqjZOFPQmlD2hwKBgQCSUcrpbn+GFmBR/1QgMx9mN9rF6nTlyQEk5fpQBVssrrzthVg8ZzzdUKad/1ISOlfdxdHC/Yx5+12UnlVllNysLDAcO9Trna0VLz4L0FhSebr2yHHTqikR16WZCLXEYm8AhmuCKIl4HAlLpKKlulYisF2sBVUeU8RUOf0g9sztuQKBgHzXbWrqboFB0BzGnDG2ZiFwonNziCV2jloPxPU9Yb/XJI4SFuUOeaKSqv9ravJ46aQLElEX1U0YGYrNL10tLwmOE6iQ9YTBUGvcsUjBuoLuwHaO4vsXh5eVcDkpi4lP0OZThxhh7tg419veEFwE9Qd7wPCwQU540q9/0JmzsBpdAoGAZNE/hepkGCowJL0XxkAy6+B+VRiTSd7N/ksJWcnk26vnP0h8Ut0fpinAnJjVKfGNlygoHgFRUpoMmwewpB7r3P1iDI5gO4zSZe5YzH3pBi1SyzvdnycQdJ/svx0QVPbUzB6SJKurh5zv/SVqDpemleusdRJKzv9cQql/2uqv+e4=
+    alipayPublicKey: MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAizGvadql75E+/eD0MAqeNdedj685VzdlrkWYTHVNf33+RtZyDfuGzOedQpsaepkut0gC4E/mn1X4tkIt+jYp5z5DJKX5n/MHKJ+Qx7CqkAAEKDz9W69ZklF5uPXT6/UOiK1lGSVxYhJjcNVNA5Vc/Xb0LQDju9dTe5rpuz+KhWs6vGjpx7O4HoWp1aJ7geFPRTjdvAUcO2rpFFrrx1ep+rgAH++Z88VExBgrGfUn1EPJrLiZpO5gS3Nt/O69bM4WeiL+i1A0CerA9rptvuL7UNOi9pon8pg1AO/llF1AF8YujhbmoiG3fsVWq6h25C3sMhq5R+bUAiHYuiKCOW+7OQIDAQAB
+    notifyUrl: http://c986d9d6.natappfree.cc/pay/notify
+QR:
+  code:
+    save: "C:/Users/hkzzz/Desktop/MusicSystemcode/KuGe-project/src/assets/image.png"
+aliyunoss:
+  endpoint: "oss-cn-shenzhen.aliyuncs.com"
+  accesskey: "7nza61JAuio4ZTNnLcwsvRVmjWZiHf"
+  accessid: "LTAI5tL2k8GFtskAAnvWXqT6"
+  bucketName: "kuge"
+
+upload:
+  allowed-file-types: .mp3,.wav,.flac,.aac,.ogg,.wma,.m4a,.ape

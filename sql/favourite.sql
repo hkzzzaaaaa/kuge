@@ -1,0 +1,12 @@
+INSERT INTO `favourite` (`id`, `user_id`, `music_id`, `state`, `create_time`, `update_time`) VALUES (6, 2, 9, 1, '2025-08-11 23:48:48', '2025-08-11 23:48:48');
+INSERT INTO `favourite` (`id`, `user_id`, `music_id`, `state`, `create_time`, `update_time`) VALUES (7, 2, 8, 0, '2025-08-12 07:28:16', '2025-08-12 07:28:16');
+INSERT INTO `favourite` (`id`, `user_id`, `music_id`, `state`, `create_time`, `update_time`) VALUES (8, 2, 7, 0, '2025-08-12 07:28:17', '2025-08-12 07:28:17');
+INSERT INTO `favourite` (`id`, `user_id`, `music_id`, `state`, `create_time`, `update_time`) VALUES (9, 2, 6, 0, '2025-08-12 07:28:32', '2025-08-12 07:28:32');
+INSERT INTO `favourite` (`id`, `user_id`, `music_id`, `state`, `create_time`, `update_time`) VALUES (10, 2, 4, 0, '2025-08-12 07:51:18', '2025-08-12 07:51:18');
+INSERT INTO `favourite` (`id`, `user_id`, `music_id`, `state`, `create_time`, `update_time`) VALUES (11, 2, 3, 0, '2025-08-12 07:51:18', '2025-08-12 07:51:18');
+INSERT INTO `favourite` (`id`, `user_id`, `music_id`, `state`, `create_time`, `update_time`) VALUES (12, 2, 2, 0, '2025-08-12 07:51:19', '2025-08-12 07:51:19');
+INSERT INTO `favourite` (`id`, `user_id`, `music_id`, `state`, `create_time`, `update_time`) VALUES (13, 2, 10, 0, '2025-08-12 07:51:20', '2025-08-12 07:51:20');
+INSERT INTO `favourite` (`id`, `user_id`, `music_id`, `state`, `create_time`, `update_time`) VALUES (14, 2, 1, 0, '2025-08-12 07:51:25', '2025-08-12 07:51:25');
+INSERT INTO `favourite` (`id`, `user_id`, `music_id`, `state`, `create_time`, `update_time`) VALUES (15, 2, 5, 0, '2025-08-12 07:51:35', '2025-08-12 07:51:35');
+INSERT INTO `favourite` (`id`, `user_id`, `music_id`, `state`, `create_time`, `update_time`) VALUES (16, 3, 9, 1, '2025-08-12 08:27:58', '2025-08-12 08:27:58');
+INSERT INTO `favourite` (`id`, `user_id`, `music_id`, `state`, `create_time`, `update_time`) VALUES (17, 3, 1, 1, '2025-08-12 08:28:01', '2025-08-12 08:28:01');
